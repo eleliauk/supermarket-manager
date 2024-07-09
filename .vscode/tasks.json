@@ -1,0 +1,50 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "clang++",
+            "args": [
+                "-std=c++17",
+                "-o",
+                "main",
+                "main.cpp",
+                "-I/opt/homebrew/opt/mysql/include/mysql",
+                "-L/opt/homebrew/opt/mysql/lib",
+                "-lmysqlclient"
+            ],
+            "group": "build",
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+        {
+            "type": "cppbuild",
+            "label": "C/C++: clang 生成活动文件",
+            "command": "/usr/bin/clang",
+            "args": [
+                "-fcolor-diagnostics",
+                "-fansi-escape-codes",
+                "-g",
+                "-o",
+                "main", // 这里是输出文件的名称
+                "main.cpp", // 这里是输入文件的名称，例如 main.c 或者你的源文件名
+                "-I/opt/homebrew/opt/mysql/include/mysql", // MySQL 头文件路径
+                "-L/opt/homebrew/opt/mysql/lib", // MySQL 库文件路径
+                "-lmysqlclient" // MySQL 连接库文件
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "调试器生成的任务。"
+        }
+    ]
+}

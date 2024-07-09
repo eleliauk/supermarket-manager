@@ -1,0 +1,31 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/main", // 可执行文件路径，根据你的实际情况修改
+            "args": [], // 可选：传递给程序的命令行参数
+            "stopAtEntry": false, // 设置为 true 则程序在启动时停在入口点处
+            "cwd": "${workspaceFolder}", // 程序的工作目录
+            "environment": [], // 可选：设置环境变量
+            "externalConsole": false, // 设置为 true 则使用外部控制台
+            "MIMode": "lldb", // 调试器的模式，macOS 默认使用 lldb
+            "preLaunchTask": "build", // 执行构建任务的名称，确保与 tasks.json 中的任务名称一致
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "logging": {
+                "moduleLoad": false,
+                "programOutput": true,
+                "engineLogging": false,
+                "exceptions": false
+            }
+        }
+    ]
+}

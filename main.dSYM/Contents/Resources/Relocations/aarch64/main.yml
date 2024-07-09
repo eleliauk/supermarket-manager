@@ -1,0 +1,30 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     main
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: __Z5getchv, symObjAddr: 0x0, symBinAddr: 0x100003CD8, symSize: 0x16C }
+  - { offsetInCU: 0x17E, offset: 0x17E, size: 0x8, addend: 0x0, symName: __Z5getchv, symObjAddr: 0x0, symBinAddr: 0x100003CD8, symSize: 0x16C }
+  - { offsetInCU: 0x1B8, offset: 0x1B8, size: 0x8, addend: 0x0, symName: __Z12hidden_inputv, symObjAddr: 0x16C, symBinAddr: 0x100003E44, symSize: 0x1D4 }
+  - { offsetInCU: 0x1F2, offset: 0x1F2, size: 0x8, addend: 0x0, symName: __Z13Database_initP8Database, symObjAddr: 0x340, symBinAddr: 0x100004018, symSize: 0x124 }
+  - { offsetInCU: 0x21A, offset: 0x21A, size: 0x8, addend: 0x0, symName: __Z14Database_closeP8Database, symObjAddr: 0x464, symBinAddr: 0x10000413C, symSize: 0x28 }
+  - { offsetInCU: 0x242, offset: 0x242, size: 0x8, addend: 0x0, symName: __Z9User_initP4UserP8Database, symObjAddr: 0x48C, symBinAddr: 0x100004164, symSize: 0x20 }
+  - { offsetInCU: 0x278, offset: 0x278, size: 0x8, addend: 0x0, symName: __Z15isUsernameExistP4UserPKc, symObjAddr: 0x4AC, symBinAddr: 0x100004184, symSize: 0x18C }
+  - { offsetInCU: 0x2DF, offset: 0x2DF, size: 0x8, addend: 0x0, symName: __Z12registerUserP4UserPKcS2_, symObjAddr: 0x638, symBinAddr: 0x100004310, symSize: 0x178 }
+  - { offsetInCU: 0x338, offset: 0x338, size: 0x8, addend: 0x0, symName: __Z9loginUserP4UserPKcS2_, symObjAddr: 0x7B0, symBinAddr: 0x100004488, symSize: 0x1FC }
+  - { offsetInCU: 0x3B0, offset: 0x3B0, size: 0x8, addend: 0x0, symName: __Z12Product_initP7ProductP8Database, symObjAddr: 0x9AC, symBinAddr: 0x100004684, symSize: 0x20 }
+  - { offsetInCU: 0x3E6, offset: 0x3E6, size: 0x8, addend: 0x0, symName: __Z10addProductP7ProductiPKcdi, symObjAddr: 0x9CC, symBinAddr: 0x1000046A4, symSize: 0x138 }
+  - { offsetInCU: 0x45A, offset: 0x45A, size: 0x8, addend: 0x0, symName: __Z16queryAllProductsP7Product, symObjAddr: 0xB04, symBinAddr: 0x1000047DC, symSize: 0x204 }
+  - { offsetInCU: 0x4AC, offset: 0x4AC, size: 0x8, addend: 0x0, symName: __Z13deleteProductP7Producti, symObjAddr: 0xD08, symBinAddr: 0x1000049E0, symSize: 0x110 }
+  - { offsetInCU: 0x4F0, offset: 0x4F0, size: 0x8, addend: 0x0, symName: __Z12queryProductP7Producti, symObjAddr: 0xE18, symBinAddr: 0x100004AF0, symSize: 0x230 }
+  - { offsetInCU: 0x552, offset: 0x552, size: 0x8, addend: 0x0, symName: __Z13Supplier_initP8SupplierP8Database, symObjAddr: 0x1048, symBinAddr: 0x100004D20, symSize: 0x20 }
+  - { offsetInCU: 0x58B, offset: 0x58B, size: 0x8, addend: 0x0, symName: __Z11addSupplierP8SupplieriPKcS2_, symObjAddr: 0x1068, symBinAddr: 0x100004D40, symSize: 0x128 }
+  - { offsetInCU: 0x5F5, offset: 0x5F5, size: 0x8, addend: 0x0, symName: __Z17queryAllSuppliersP8Supplier, symObjAddr: 0x1190, symBinAddr: 0x100004E68, symSize: 0x1E8 }
+  - { offsetInCU: 0x64C, offset: 0x64C, size: 0x8, addend: 0x0, symName: __Z14deleteSupplierP8Supplieri, symObjAddr: 0x1378, symBinAddr: 0x100005050, symSize: 0x110 }
+  - { offsetInCU: 0x694, offset: 0x694, size: 0x8, addend: 0x0, symName: __Z11editProductP8DatabaseiPKcdi, symObjAddr: 0x1488, symBinAddr: 0x100005160, symSize: 0x118 }
+  - { offsetInCU: 0x70D, offset: 0x70D, size: 0x8, addend: 0x0, symName: __Z17setStockThresholdP8Databaseii, symObjAddr: 0x15A0, symBinAddr: 0x100005278, symSize: 0x100 }
+  - { offsetInCU: 0x764, offset: 0x764, size: 0x8, addend: 0x0, symName: __Z10checkStockP8Database, symObjAddr: 0x16A0, symBinAddr: 0x100005378, symSize: 0x1C8 }
+  - { offsetInCU: 0x7CE, offset: 0x7CE, size: 0x8, addend: 0x0, symName: __Z18addSupplierProductP8Databaseii, symObjAddr: 0x1868, symBinAddr: 0x100005540, symSize: 0x100 }
+  - { offsetInCU: 0x825, offset: 0x825, size: 0x8, addend: 0x0, symName: __Z21querySupplierProductsP8Databasei, symObjAddr: 0x1968, symBinAddr: 0x100005640, symSize: 0x1B4 }
+  - { offsetInCU: 0x88F, offset: 0x88F, size: 0x8, addend: 0x0, symName: __Z13querySupplierP8Supplieri, symObjAddr: 0x1B1C, symBinAddr: 0x1000057F4, symSize: 0x214 }
+  - { offsetInCU: 0x8F9, offset: 0x8F9, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x1D30, symBinAddr: 0x100005A08, symSize: 0x8A0 }
+...
