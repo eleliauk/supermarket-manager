@@ -426,9 +426,9 @@ void querySupplier(Supplier* supplier, int id) {
     MYSQL_ROW row;
     if ((row = mysql_fetch_row(res))) {
         printf("======================================================================================================\n");
-        printf("供应商ID: %s\n", row[0]);
-        printf("供应商名称: %s\n", row[1]);
-        printf("供应商联系方式: %s\n", row[2]);
+        printf("              供应商ID:%s\n          ", row[0]);
+        printf("              供应商名称: %s\n       ", row[1]);
+        printf("            供应商联系方式: %s\n      ", row[2]);
         printf("======================================================================================================\n");
     }
     else {
@@ -573,12 +573,7 @@ int main() {
                         break;
                         case 7:
                         {
-                            int id,quantity;
-                            printf("请输入商品ID：");
-                            scanf("%d", &id);
-                            printf("请输入商品数量阀值：");
-                            scanf("%d", &quantity);
-                            setStockThreshold(product.db, id, quantity);
+                         checkStock(product.db);
                         }
                         break;
                         case 0:
